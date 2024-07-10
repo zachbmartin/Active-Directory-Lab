@@ -12,7 +12,7 @@ Created lab environment in Oracle VM's to conduct brute-force attack on Active D
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 10</b> 
 - <b>Kali Linux</b>
 - <b>Ubuntu</b>
 
