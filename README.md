@@ -1,7 +1,7 @@
 <h1>Active Directory and Splunk Lab</h1>
 
 <h2>Description</h2>
-Created lab environment in Oracle VM's to conduct brute-force attack on Active Directory user. Splunk is installed and configured to log this event.
+Created lab environment in Oracle VM's to conduct a brute-force attack on Active Directory user. Splunk is installed and configured to view telemetry.
 <br />
 
 
@@ -21,32 +21,34 @@ Created lab environment in Oracle VM's to conduct brute-force attack on Active D
 
 <p align="center">
 Project Diagram: <br/>
-<img src="https://imgur.com/6pc1BE1">
+<img src="https://imgur.com/6pc1BE1.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Account for User "Jenny Smith" created in AD:  <br/>
+<img src="https://imgur.com/X620lTq.png" height="80%" width="80%" alt="ADprojects"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+20 random passwords to be ran for attack + actual password added at the bottom (assume it was acquired by some means of reconaissance): <br/>
+<img src="https://imgur.com/Smhb06h.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Utilizing crowbar in Kali to conduct brute-force attack on user "jsmith":  
+ <br/>
+"RDP-success" inidicating succesful remote log in
+<img src="https://imgur.com/15f0XnM.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Event ID 4625 (account failed to log on) has 20 attempts, matching with the password list
+<br />
+Event ID 4624 (account successfully logged on) has 1 attempt, matching with the successful attack from Linux machine  <br/>
+<img src="https://imgur.com/uZ8hYNR.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Confirmed attack from Kali Linux machine:  <br/>
+<img src="https://imgur.com/T1MkZeu.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 
 <!--
  ```diff
