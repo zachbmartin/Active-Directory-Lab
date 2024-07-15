@@ -21,7 +21,7 @@ Created lab environment in Oracle VM's to conduct a brute-force attack on Active
 
 <p align="center">
 Project Diagram: <br/>
-<img src="https://imgur.com/6pc1BE1.png" height="80%" width="80%" alt="ADproject"/>
+<img src="https://imgur.com/YbRxmuJ.png" height="80%" width="80%" alt="ADproject"/>
 <br />
 <br />
 Account for User "Jenny Smith" created in AD:  <br/>
